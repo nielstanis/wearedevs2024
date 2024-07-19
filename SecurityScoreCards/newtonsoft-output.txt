@@ -1,0 +1,99 @@
+nelson@ghost-m2 ~/github/wearedevs2024/SecurityScoreCards            [11:08:03]
+> $ scorecard --repo=https://github.com/JamesNK/Newtonsoft.Json                                                                                   [±main ✓]
+Starting [Pinned-Dependencies]
+Starting [Fuzzing]
+Starting [Packaging]
+Starting [Security-Policy]
+Starting [Code-Review]
+Starting [Branch-Protection]
+Starting [CII-Best-Practices]
+Starting [Dangerous-Workflow]
+Starting [License]
+Starting [Token-Permissions]
+Starting [Signed-Releases]
+Starting [Dependency-Update-Tool]
+Starting [SAST]
+Starting [Vulnerabilities]
+Starting [CI-Tests]
+Starting [Contributors]
+Starting [Maintained]
+Starting [Binary-Artifacts]
+Finished [Security-Policy]
+Finished [Code-Review]
+Finished [Branch-Protection]
+Finished [Pinned-Dependencies]
+Finished [Fuzzing]
+Finished [Packaging]
+Finished [Token-Permissions]
+Finished [CII-Best-Practices]
+Finished [Dangerous-Workflow]
+Finished [License]
+Finished [Vulnerabilities]
+Finished [Signed-Releases]
+Finished [Dependency-Update-Tool]
+Finished [SAST]
+Finished [Binary-Artifacts]
+Finished [CI-Tests]
+Finished [Contributors]
+Finished [Maintained]
+
+RESULTS
+-------
+Aggregate score: 3.0 / 10
+
+Check scores:
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+|  SCORE  |          NAME          |             REASON             |                                               DOCUMENTATION/REMEDIATION                                               |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 10 / 10 | Binary-Artifacts       | no binaries found in the repo  | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#binary-artifacts       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 0 / 10  | Branch-Protection      | branch protection not enabled  | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#branch-protection      |
+|         |                        | on development/release         |                                                                                                                       |
+|         |                        | branches                       |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 2 / 10  | CI-Tests               | 5 out of 21 merged PRs         | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#ci-tests               |
+|         |                        | checked by a CI test -- score  |                                                                                                                       |
+|         |                        | normalized to 2                |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 0 / 10  | CII-Best-Practices     | no effort to earn an OpenSSF   | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#cii-best-practices     |
+|         |                        | best practices badge detected  |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 3 / 10  | Code-Review            | found 21 unreviewed changesets | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#code-review            |
+|         |                        | out of 30 -- score normalized  |                                                                                                                       |
+|         |                        | to 3                           |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 10 / 10 | Contributors           | 15 different organizations     | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#contributors           |
+|         |                        | found -- score normalized to   |                                                                                                                       |
+|         |                        | 10                             |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| ?       | Dangerous-Workflow     | no workflows found             | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#dangerous-workflow     |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 0 / 10  | Dependency-Update-Tool | no update tool detected        | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#dependency-update-tool |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 0 / 10  | Fuzzing                | project is not fuzzed          | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#fuzzing                |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 10 / 10 | License                | license file detected          | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#license                |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 1 / 10  | Maintained             | 2 commit(s) out of 30 and 0    | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#maintained             |
+|         |                        | issue activity out of 30 found |                                                                                                                       |
+|         |                        | in the last 90 days -- score   |                                                                                                                       |
+|         |                        | normalized to 1                |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| ?       | Packaging              | no published package detected  | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#packaging              |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| ?       | Pinned-Dependencies    | no dependencies found          | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#pinned-dependencies    |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 0 / 10  | SAST                   | SAST tool is not run on all    | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#sast                   |
+|         |                        | commits -- score normalized to |                                                                                                                       |
+|         |                        | 0                              |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 0 / 10  | Security-Policy        | security policy file not       | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#security-policy        |
+|         |                        | detected                       |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 0 / 10  | Signed-Releases        | 0 out of 5 artifacts are       | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#signed-releases        |
+|         |                        | signed or have provenance      |                                                                                                                       |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| ?       | Token-Permissions      | no github tokens found         | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#token-permissions      |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 10 / 10 | Vulnerabilities        | no vulnerabilities detected    | https://github.com/ossf/scorecard/blob/49c0eed3a423f00c872b5c3c9f1bbca9e8aae799/docs/checks.md#vulnerabilities        |
+|---------|------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
