@@ -1,4 +1,4 @@
-# WeAreDevelopers World Congress 2024 - Assessing 3rd Party Libraries more easily with Security Scorecards
+# WeAreDevelopers World Congress 2024 - Reviewing 3rd Party Libraries more easily with Security Scorecards
 
 Several studies shown that round 80% of our applications consist of other people's code because why would you re-create something that's already made by someone else? But with using a package (e.g. NuGet, NPM, Maven, PyPi) that is developed by others, we also put a lot of trust in it, which might result in bigger security problems later. Of course, it's always a good idea to get updates of libraries in case of a bug fix related to a functional and/or security issue found. But will that be enough? What about packages that have malicious code inside? Even related to your own supply-chain security, any problem in the package its supply-chain implicitly means your supply-chain is compromised as well!
 
