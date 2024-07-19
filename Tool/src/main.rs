@@ -49,7 +49,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                     //e.g. https://api.scorecard.dev/projects/github.com/quartznet/quartznet
                 }
 
-                //fs::remove_file(&path).await.expect("Unable to remove temporary `deps.json` file, is it created?");
+                fs::remove_file(&path).await.expect("Unable to remove temporary `deps.json` file, is it created?");
             }
             Err(e) => println!("{:?}", e),
         }
